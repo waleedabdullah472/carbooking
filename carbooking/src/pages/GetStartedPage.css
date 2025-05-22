@@ -1,0 +1,143 @@
+/* Base styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+ 
+}
+
+/* Main container */
+.container {
+  width: 100%;
+  max-width: 420px;
+  margin: auto;
+  background-color: white;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-end;
+}
+
+/* Image section (height increased) */
+.image-section {
+  position: relative;
+  height: 380px; /* Increased height */
+  overflow: hidden;
+}
+
+.car-image {
+  width: 100%;
+  height: 100%;
+
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, white, transparent);
+}
+
+/* Content below image */
+.content {
+  background-color: white;
+  padding: 24px;
+  text-align: center;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+.title {
+  font-size: 1.6rem;
+
+  margin-bottom: 8px;
+  color: #111;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 24px;
+}
+
+/* Sign Up button */
+.signup-button {
+  background-color: #007bff;
+  color: white;
+ padding: 15px 30px;
+  width: 100%;
+  border: none;
+  border-radius: 9999px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.signup-button:hover {
+  background-color: #005ce6;
+}
+
+.divider {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 16px;
+}
+
+/* Google button */
+.google-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+   padding: 15px 30px;
+  border: 1px solid #ddd;
+  border-radius: 9999px;
+  background-color: white;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.google-button:hover {
+  background-color: #f0f0f0;
+}
+
+.google-icon {
+  height: 20px;
+}
+
+/* Login text */
+.login-text {
+  font-size: 0.85rem;
+  margin-top: 20px;
+  color: #444;
+}
+
+.login-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .container {
+    max-width: 600px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+}

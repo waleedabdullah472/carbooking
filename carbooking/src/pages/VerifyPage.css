@@ -1,0 +1,26 @@
+.verify-container {
+  height: 100vh;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.verify-box {
+  text-align: center;
+  padding: 40px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.verify-box h1 {
+  color: green;
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.verify-box p {
+  color: #333;
+  font-size: 1.1rem;
+}

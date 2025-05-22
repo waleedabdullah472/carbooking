@@ -1,0 +1,105 @@
+.container {
+  width: 100%;
+  max-width: 420px;
+  margin: auto;
+  background-color: white;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-end;
+}
+
+.image-section {
+  position: relative;
+  height: 380px;
+  overflow: hidden;
+}
+
+.car-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 24px;
+  left: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 4px #000;
+  z-index: 2;
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, white, transparent);
+}
+
+.content {
+  background-color: white;
+  padding: 24px;
+  text-align: center;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+.input-field,
+.signup-button,
+.google-button {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  font-size: 1rem;
+  border-radius: 12px;
+  box-sizing: border-box;
+  
+}
+
+.input-field {
+  border: 1px solid #ddd;
+  
+}
+
+.signup-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+input
+}
+
+.google-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid #ddd;
+  background-color: white;
+  cursor: pointer;
+}
+
+.google-icon {
+  height: 20px;
+}
+
+.divider {
+  margin: 16px 0;
+  color: #888;
+}
+
+.login-text {
+  font-size: 0.85rem;
+  color: #444;
+}
+
+.login-link {
+  color: #007bff;
+  text-decoration: none;
+}

@@ -1,0 +1,186 @@
+/* Base styles for all screen sizes */
+.onboarding-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.top-right {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+}
+
+.skip-button {
+  background-color: transparent;
+  border: none;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.onboarding-image {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 1.75em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #777;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.indicator {
+  width: 30px;
+  height: 5px;
+  border-radius: 0;
+  background-color: #ddd;
+  margin: 0 5px;
+  display: inline-block;
+}
+
+.indicator.active {
+  background-color: green;
+}
+
+.next-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 18px;
+  width: auto;
+}
+
+/* Media query for larger screens (e.g., desktops, laptops) */
+@media (min-width: 1200px) {
+  .onboarding-image {
+    max-width: 60%; /*  Smaller image on larger screens */
+  }
+
+  h1 {
+    font-size: 2.5em; /* Larger heading */
+  }
+
+  p {
+    font-size: 1.5em; /* Larger paragraph text */
+    max-width: 70%; /* Limit paragraph width for better readability */
+    margin-left: auto; /* Center the paragraph horizontally */
+    margin-right: auto;
+  }
+
+  .next-button {
+    padding: 20px 40px; /*  Larger button */
+    font-size: 20px;
+  }
+
+  .indicator {
+    width: 40px; /* Larger indicator lines */
+    height: 8px;
+  }
+
+  .skip-button {
+      font-size: 18px; /* Larger skip button text */
+      padding: 10px 15px;
+  }
+}
+
+/* Media query for tablets and smaller desktops */
+@media (max-width: 992px) {
+  .onboarding-image {
+    max-width: 70%;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.3em;
+  }
+
+  .next-button {
+    padding: 18px 35px;
+    font-size: 19px;
+  }
+
+    .skip-button {
+        font-size: 17px;
+        padding: 9px 14px;
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .onboarding-image {
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .next-button {
+    width: 80%;
+    font-size: 16px;
+    border-radius: 100px;
+  }
+
+  .indicator {
+    width: 20px;
+    height: 4px;
+  }
+   .skip-button {
+        font-size: 15px;
+        padding: 7px 10px;
+    }
+}
+
+/* Mobile specific adjustments */
+@media (max-width: 480px) {
+  .top-right {
+    top: 10px;
+  }
+
+  h1 {
+    font-size: 1.4em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+   .skip-button {
+        font-size: 14px;
+        padding: 6px 9px;
+    }
+}

@@ -1,0 +1,269 @@
+/* Reset and base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Main container */
+.container {
+  width: 100%;
+  max-width: 420px;
+  margin: auto;
+  background-color: white;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-end;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Image section */
+.image-section {
+  position: relative;
+  height: 360px;
+  overflow: hidden;
+}
+
+.car-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, white, transparent);
+}
+
+/* Overlay text */
+.overlay-text {
+  position: absolute;
+  top: 24px;
+  left: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: rgb(8, 5, 5);
+  text-shadow: 1px 1px 4px #000;
+  z-index: 2;
+  padding-top: 50%;
+}
+
+/* Content section */
+.content {
+  background-color: white;
+  padding: 24px;
+  text-align: center;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+/* Input fields */
+.input-field {
+  width: 100%;
+  padding: 14px 18px;
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #007bff;
+}
+
+/* Login button */
+.signup-button {
+  background-color: #007bff;
+  color: white;
+  padding: 15px 30px;
+  width: 100%;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 16px;
+  transition: background-color 0.3s ease;
+  border-radius: 9999px;
+}
+
+.signup-button:hover {
+  background-color: #005ce6;
+}
+
+/* Divider */
+.divider {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 16px;
+}
+
+/* Google button */
+.google-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 15px 30px;
+  border: 1px solid #ddd;
+  border-radius: 9999px;
+  background-color: white;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.google-button:hover {
+  background-color: #f0f0f0;
+}
+
+.google-icon {
+  height: 20px;
+}
+
+/* Text below */
+.login-text {
+  font-size: 0.85rem;
+  margin-top: 20px;
+  color: #444;
+}
+
+.login-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+/* Popup full screen center */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-box {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 14px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  animation: scaleUp 0.3s ease;
+  width: 80%; /* Increase width */
+  max-width: 500px; /* Maximum width */
+  height: auto; /* Let the height adjust based on content */
+}
+
+.popup-box p {
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+
+.close-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close-btn:hover {
+  background-color: #0056cc;
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .container {
+    max-width: 600px;
+  }
+
+  .overlay-text {
+    font-size: 1.5rem;
+    color: #000;
+    padding-top: 50%;
+  }
+
+  .signup-button,
+  .google-button {
+    font-size: 1.05rem;
+  }
+
+  .input-field {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.input-label {
+  display: block;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #333;
+  transition: color 0.3s ease;
+  margin-right: 85%;
+}
+
+.input-label:hover {
+  color: #007BFF;
+}
