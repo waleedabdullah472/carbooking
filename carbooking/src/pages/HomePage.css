@@ -1,95 +1,108 @@
-/* HomePage.css */
+/* Homepage.css */
 
-.home-page {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Ensures the footer stays at the bottom */
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    padding: 20px;
+.homepage-container {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.home-header {
-    text-align: center;
-    margin-bottom: 20px;
+.homepage-card {
+  width: 375px;
+  height: 812px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensure content doesn't overflow */
 }
 
-.time-date-section {
-    text-align: center;
-    margin-bottom: 20px;
+.header {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-bottom: 1px solid #e0e0e0;
 }
 
-.quote-section {
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: white;
+.back-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  margin-right: 16px;
+  cursor: pointer;
 }
 
-.quote-section h2 {
-  font-size: 1.5em;
-  margin-bottom: 0.5em;
-}
-
-
-.news-feed-section {
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: white;
-}
-
-
-.logout-button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 1rem;
-    align-self: center; /* Center the button */
-}
-
-.home-footer {
-    margin-top: auto; /* Pushes the footer to the bottom */
-    text-align: center;
-    padding: 10px;
-    font-size: 0.8rem;
-    color: #777;
-    border-top: 1px solid #eee;
-}
-
-.announcement-bar {
-  background-color: #ffeb3b; /* Yellow */
-  color: #222;
-  text-align: center;
-  padding: 10px;
+.title {
+  font-size: 20px;
   font-weight: bold;
+  margin: 0;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-    .home-page {
-        padding: 10px;
-    }
-    .home-header h1 {
-        font-size: 2rem;
-    }
-    .logout-button {
-        width: 100%; /* Full width on small screens */
-    }
+.map-placeholder {
+  height: 400px;
+  width: 100%;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #757575;
 }
 
-.error-message {
-    color: red;
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid rgba(255, 0, 0, 0.3);
-    background-color: rgba(255, 0, 0, 0.05);
-    border-radius: 5px;
+.form-section {
+  padding: 16px;
+}
+
+.input-group {
+  margin-bottom: 12px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 14px;
+  color: #212121;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.input-icon {
+  margin-right: 8px;
+  color: #757575;
+}
+
+.input-wrapper input {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  color: #757575;
+  width: 100%;
+  outline: none;
+}
+
+.input-action {
+  margin-left: 8px;
+  color: #757575;
+  cursor: pointer;
+}
+
+.find-button {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }

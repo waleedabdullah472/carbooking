@@ -1,0 +1,39 @@
+.footer {
+  background-color: black;
+  padding: 16px 24px; /* increased padding */
+  border-radius: 9999px;
+  text-align: center;
+  width: 90%;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 28px; /* added gap between icons */
+  max-width: 320px; /* slightly wider for more spacing */
+  margin: 0 auto;
+  width: 100%;
+}
+
+.footer-icon {
+  padding: 14px; /* more space around icons */
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.footer-icon:hover,
+.footer-icon.active {
+  background-color: green;
+}
+
+.footer-icon svg {
+  display: block;
+  width: 32px; /* increased icon size */
+  height: 32px;
+  fill: white;
+}

@@ -1,0 +1,79 @@
+/* ChatPage.css */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden; /*Prevent overflow, particularly needed if chatwindow has margin */
+}
+
+.chat-header {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.chat-window {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto; /* This makes the chat window scrollable */
+  display: flex;
+  flex-direction: column; /*Make it a flex container so the autoscroll works correctly, ensure messages added at the bottom.*/
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  max-width: 70%; /*Prevents very long messages from taking over the width*/
+  word-wrap: break-word; /*Allows breaking long words, for display purposes*/
+}
+
+.message-header {
+  font-size: 0.8em;
+  color: #777;
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: space-between; /* Align user and timestamp on the same line */
+}
+
+.message.sent {
+  background-color: #dcf8c6; /* Green for sent messages */
+  align-self: flex-end; /* Align sent messages to the right */
+}
+
+.message.received {
+  background-color: #fff; /* White for received messages */
+  align-self: flex-start; /*Align received messages to the left */
+}
+
+.chat-input-area {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.chat-input {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  resize: none; /*Prevent textarea from being resized */
+}
+
+.send-button {
+  padding: 8px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #3e8e41;
+}
